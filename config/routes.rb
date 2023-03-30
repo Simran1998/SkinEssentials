@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'categories/index'
+  get 'categories/show'
   get 'products/index'
   get 'products/show'
 
@@ -12,4 +14,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :customers
   resources :products
+  resources :categories
 end
