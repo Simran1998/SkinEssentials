@@ -43,7 +43,16 @@
 
       </div>
 
-
+<div>
+        <%= form_with(url: search_products_path, method: :get, local: true) do%>
+        <div>
+          <nav class="navbar filed is-grouped mt-3">
+            <%= text_field_tag(:keywords,nil,class: "input", placeholder: "Search for products")%>
+            <%= submit_tag("search", class: "ml-3 button is-dark")%>
+          </nav>
+        </div>
+        <%end%>
+      </div>
 
   </div>
 </nav>
