@@ -20,6 +20,7 @@ google:
   project: SkinEssentials
   credentials: <%= Rails.root.join("path/to/gcs.keyfile") %>
   bucket: skinessentials_bucket
+  iam: true
 
 # Use bin/rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)
 # microsoft:
