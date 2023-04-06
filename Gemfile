@@ -76,3 +76,6 @@ end
   gem "devise"
 
   gem "image_processing"
+
+
+gem "google-cloud-storage"

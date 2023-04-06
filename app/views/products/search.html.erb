@@ -1,0 +1,16 @@
+
+
+<% if(@products.count == 0)%>
+<p style="font-size:3rem; color:red">
+No Products found while searching for: <%= params[:keywords]%>
+</p>
+<%else%>
+<p>
+Products found while searching for: <%= params[:keywords]%>
+</p>
+<ul>
+<% @products.each do |product|%>
+<li><%= link_to product.name, product %></li>
+<%end%>
+</ul>
+<%end%>
