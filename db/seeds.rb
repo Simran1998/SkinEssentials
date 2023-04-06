@@ -31,43 +31,10 @@ data.each do |m|
   else
     puts "invalid category #{m['category']} for product #{m['product']}."
   end
-
-  # puts m['original_title']
 end
 
-# file = Rails.root.join("db/categories.csv")
-# puts "Loading products from the csv file: #{file}"
-
-# csv_data = File.read(file)
-# categories = CSV.parse(csv_data, headers: true, encoding: "iso-8859-1")
-
-# categories.each do |c|
-#   Category.create(
-#     name: c["name"]
-#   )
-# end
-# puts "Created #{Category.count} category records"
-
-
-
-# filename = Rails.root.join("db/products.csv")
-# puts "Loading products from the csv file: #{filename}"
-
-# csv_data_product = File.read(filename)
-# products = CSV.parse(csv_data_product, headers: true, encoding: "iso-8859-1")
-
-# data.each do |p|
-#   Product.create(
-#     name:       p["product"],
-#     category_id:   p["category"],
-#     brand:      p["brand"],
-#     price:      p["price"],
-#     image:      p["image"]
-
-
-#   )
-# end
-# puts "Created #{Product.count} products"
+puts "Created #{Product.count} products records"
+puts "Created #{Category.count} category records"
 
 if Rails.env.development?
   AdminUser.create!(email: 'admin@example.com', password: 'password',
