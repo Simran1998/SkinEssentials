@@ -76,3 +76,5 @@ end
   gem "devise"
 
   gem "image_processing"
+
+  gem "kaminari"
