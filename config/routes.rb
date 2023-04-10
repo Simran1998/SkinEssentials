@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   get 'products/index'
   get 'products/show'
 
+  get '/contact', to: 'pages#contact'
+  get '/about', to: 'pages#about'
+
   get "home/index"
   root "home#index"
   devise_for :admin_users, ActiveAdmin::Devise.config
