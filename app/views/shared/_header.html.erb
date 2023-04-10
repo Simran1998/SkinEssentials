@@ -48,6 +48,8 @@
         <div>
           <nav class="navbar filed is-grouped mt-3">
             <%= text_field_tag(:keywords,nil,class: "input", placeholder: "Search for products")%>
+             <%= select_tag :category, options_for_select(Category.all.map{ |c| [c.name, c.id] }, params[:category]), prompt: "All categories" %>
+
             <%= submit_tag("search", class: "ml-3 button is-dark")%>
           </nav>
         </div>
