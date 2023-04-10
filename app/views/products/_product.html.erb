@@ -1,4 +1,4 @@
-<div class="card m-5 " style="width:29%;float:left">
+<div class="card m-5 " style="width:21%;float:left;height:400px">
 <%if product.image.present? %>
   <div class="card-image">
     <figure class="image is-5by3">
@@ -8,18 +8,20 @@
   <%end%>
   <div class="card-content">
 
-  <p class="title "><%= link_to product.name, product %></p>
+  <p class="title "style="font-size:15px"><%= link_to product.name, product %></p>
+   <p class="description">Brand: <%= product.brand %></p>
    <% if product.sale_price.present? %>
-    <p class="subtitle "><strike><%= product.price %></strike> <span style="color:red"><%= product.sale_price %></span></p>
+    <p class="subtitle" style="font-size:15px">Price: <strike><%= number_to_currency(product.price) %></strike> <span style="color:red"><%= product.sale_price %></span></p>
 
         <% else%>
-         <p class="subtitle "><%= product.price %></p>
+         <p class="subtitle " style="font-size:15px">Price: <%= number_to_currency(product.price) %></p>
+  <%end%>
 
-   <%end%>
 
     <% if action_name == 'show' %>
       <p class="description"><%= product.description %></p>
     <% end %>
+
 
   </div>
 </div>
