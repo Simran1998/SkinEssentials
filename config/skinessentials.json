@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "skinessentials",
+  "private_key_id": "a10bf30b00c7de734fb4f9ff34a6cc9a796d5029",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDEqgxOBpO39Kfr\nwkc/fau47CVxWuYN2d9N/VY4ayiQPRs7xAHRsIhsCaYzdER/+O9Sh2Y38t9o1G+X\n3LYnGs8yEgu7a1xRH2/nBTzfjK24uUBEErVkfRJMRBuPuMcv2awyjicGcHERqaHe\nrIESWSlRhGyhoZOIxaFMlHblQofIpcx3O2Mu8I6E7rTIeS8jIREMB4l/KraNqKPL\np/FY1mSp/SCTiWqVR9XHDXFWWothPWEFVoJbu3Okc6GR/zl1WGh7k6vZWIZhOrK9\n1dfnDySS5+OlIlHeoFi2Ba0ADfZa593gAXQakcyf1k/kkJLcqq1MoHLreU7j2DQf\niPUOVMplAgMBAAECggEAD3FDLZZJH6L7qODKEO4jNOOqw1ZN+wzzrU9Pp6GhygUD\nqtim2ZUOep3zBGvPBtXLJF8YPkZD14VaLOHKa31+Awe/5EEs0Cboix/8v24FDxym\nyKGdHOKlnuz4gBDUPTQ5rVo/A2ZYDo5pdOTKmXWnBQJhuFBfF23d+aItHYPw9Gbj\nKfwm+NhOwiIavSm+vNjwpPEAGlLBOf0lsMJfPn4XDkbm0gok5YoZ4gHCAnRoBzyn\ng5plnp9YUZnO9pVj3oGPkz9WpnnJ1zWJpP2F2a7+dCG/AceNO4S24lxJ4d+B7bR8\nlwrt2Hr7fJ5Kjkh1mQEjDfpQ6MJwgVfllpjG4LPLKQKBgQDuNJnBmp95v3Qmi0i/\nhzz205eX1T/9ffgFmA3EEbz5AwqeU2eBi5JjkXe2rM2lcjFrFolxC+7XdiFq0mJO\nTu9u66AIfz+H6Fv5hpSV8bQKW6tYaULrUBpis4xnfYpBNrpga+gBsXlGCJByBYyS\nrqYInzV9uskm1+CiQrLw7vuTSQKBgQDTWwU+Fhuyq4JyYlvmEDkLjAZpqUb6xc5T\nB+ajHhVNNJ+eLHe+Li+A0jaXl8QZ5B5GkUccGPOG+qpacnA+jRpXmvVSdwhPHZhi\njlDGKX9+VTDJ2vFUWrLDOiTbKQJhaVJEYVs/F9j0lXfckvTd+gVz7riDn5Bs+R9E\nTL1EuTsiPQKBgQCHgu8Rn8gnt834+3XoV6RL+rWbz9o2eIo3jHgQWdL6iktpJKOW\no/Mkp6XGC2p2O493j3ujDxnSA0chgQwh5m/51xvUmadnxr1EJ9axsq4s0leY1VEX\nkxtfmSs/2MBlNyAyKFD1XaRTPh4Gb7e33plgAEqq+y7h5R/Kz00DGcGO2QKBgQC+\nR8HOhaTmFFbamAbYd16EMMpNMiM+/fqk8gYIcLsIyQmzI6GiTH5j4d1YWUApdyBy\ns7RrbWNB8EaSK1k2V16R5GZcmeGXKLPadvntjcrEd/n2oPCH2yf5b01jKeaEwIda\nHLRDdzrR6AcDRCLD/aYPG6puhadHFHm7ycLULlc4mQKBgED0rr1TAQZyCG2PWEJ3\n68jDYfPzkUKNraV4vBQGXFdLE8JTS1L9OYYHw+7K7LPDe0K9GkciUho9y9Vq30+J\ncW5Fuij4eHUasA21l+gjz73ycf5PtG8tFXPXCFntPQYT+GpkjOSBL7mh7vzRF4Kh\nxBAwrOAng9yWVY7eZtqCGxfm\n-----END PRIVATE KEY-----\n",
+  "client_email": "skinessentials@skinessentials.iam.gserviceaccount.com",
+  "client_id": "117449576212482748329",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/skinessentials%40skinessentials.iam.gserviceaccount.com"
+}

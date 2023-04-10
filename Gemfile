@@ -78,4 +78,4 @@ end
   gem "image_processing"
 
 
-gem "google-cloud-storage"
+gem 'google-cloud-storage'
