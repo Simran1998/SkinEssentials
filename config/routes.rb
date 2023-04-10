@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get '/contact', to: 'pages#contact'
   get '/about', to: 'pages#about'
   get '/products/sale', to: 'products#sale'
+  get '/products/new', to: 'products#new'
+
 
   get "home/index"
   root "home#index"

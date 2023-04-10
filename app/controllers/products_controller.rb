@@ -16,4 +16,8 @@ class ProductsController < ApplicationController
   def sale
     @products= Product.where.not(sale_price: nil).where("sale_price < price")
   end
+
+  def new
+    @products =  Product.where("created_at >= ?", 3.days.ago)
+  end
 end
