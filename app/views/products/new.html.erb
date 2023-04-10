@@ -11,7 +11,8 @@
   <div class="card-content">
 
   <p class="title "><%= link_to product.name, product %></p>
-        <p class="subtitle "><%= product.price %></p>
+        <p class="subtitle ">Price: <%= product.price %></p>
+        <p class="subtitle ">Launched on: <%= product.created_at.strftime("%F") %></p>
 
   </div>
 </div>
