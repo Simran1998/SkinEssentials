@@ -14,9 +14,13 @@
   <body>
    <section class= "container">
 <%= render partial:'shared/header'%>
+<nav class="breadcrumb" style= "display: flex">
+    <%= breadcrumbs(params[:controller], params[:action]) %>
+  </nav>
 
     <%= yield %>
     </section>
+
   </body>
 </html>
 
