@@ -1,0 +1,20 @@
+<div class="card m-5 " style="width:29%;float:left">
+<%if product.image.present? %>
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <%= image_tag url_for(product.image) %>
+    </figure>
+  </div>
+  <%end%>
+  <div class="card-content">
+
+  <p class="title "><%= link_to product.name, product %></p>
+   <% if product.sale_price.present? %>
+    <p class="subtitle "><strike><%= product.price %></strike> <span style="color:red"><%= product.sale_price %></span></p>
+
+        <% else%>
+         <p class="subtitle "><%= product.price %></p>
+   <%end%>
+
+  </div>
+</div>

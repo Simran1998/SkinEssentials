@@ -1,20 +1,5 @@
+<%= render @product%>
 
-<div class="card m-5 " style="width:29%;float:left">
-<%if @product.image.present? %>
-  <div class="card-image">
-    <figure class="image is-4by3">
-      <%= image_tag @product.image %>
-    </figure>
-  </div>
-  <%end%>
-  <div class="card-content">
-
-  <p class="title "><%= @product.name %></p>
-        <p class="subtitle "><%= @product.price %></p>
-
-<p class="subtitle "><%= @product.description %></p>
-  </div>
-</div>
 
 
 
