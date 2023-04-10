@@ -12,4 +12,8 @@ class ProductsController < ApplicationController
     category_search = "%#{params[:category]}%"
     @products = Product.where("name LIKE ?", wildcard_search).where("category_id LIKE ?", category_search)
   end
+
+  def sale
+    @products= Product.where.not(sale_price: nil).where("sale_price < price")
+  end
 end
