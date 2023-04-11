@@ -5,10 +5,10 @@ class ProductsController < ApplicationController
   end
 
   def show
-    session[:visit_count] ||= 0
+    #session[:visit_count] ||= 0
     # session[:visit_count] += 1
     # @visit_count = session[:visit_count]
-    # @product = Product.find(params[:id])
+    @product = Product.find(params[:id])
     @category = @product.category
   end
 
