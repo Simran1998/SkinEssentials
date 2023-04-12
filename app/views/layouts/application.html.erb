@@ -17,37 +17,38 @@
 <nav class="breadcrumb" style= "display: flex">
     <%= breadcrumbs(params[:controller], params[:action]) %>
   </nav>
-<%= debug session[:shopping_cart]%>
-<% if flash[:notice] %>
-        <p>
-          <%= flash[:notice] %>
-        </p>
-      <% end %>
 
-<nav>
+<nav class="navbar-end">
 
         <ul>
+          Cart
+          <sup><%= cart.size %></sup>
           <li>
-            Cart
             <% if cart.present? %>
-            <sup>
-              <%= cart.size %>
-            </sup>
-            <ul>
-              <% cart.each do |product| %>
-              <li>
-                <%# product.name %><%# link_to '−', cart_path(product), method: :delete %>
-                <%# button_to cart_path(product), method: :delete do %>
-                <%= product.name %><%= button_to '➖', cart_path(product), method: :delete  %>
-              </li>
-              <% end %>
-            </ul>
+
+
+              <ul>
+                <% cart.each do |p| %>
+                  <li>
+                    <%= p.name %> <%= button_to '−', cart_path(p), method: :delete %>
+                  </li>
+                <% end %>
+              </ul>
             <% end %>
           </li>
         </ul>
       </nav>
 
 
+<nav>
+
+
+
+<% if flash[:notice] %>
+        <p>
+          <%= flash[:notice] %>
+        </p>
+      <% end %>
 
 
     <%= yield %>

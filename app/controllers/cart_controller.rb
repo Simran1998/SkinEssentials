@@ -18,7 +18,7 @@ class CartController < ApplicationController
     id = params[:id].to_i
     session[:shopping_cart].delete(id)
     product = Product.find(id)
-    flash[:notice] = "✚ #{product.name} removed from cart."
+    flash[:notice] = "➖ #{product.name} removed from cart."
     redirect_to cart_index_path
   end
 end
