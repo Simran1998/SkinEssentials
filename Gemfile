@@ -79,3 +79,5 @@ end
 
 
 gem 'google-cloud-storage'
+
+gem 'stripe'

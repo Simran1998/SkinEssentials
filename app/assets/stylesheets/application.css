@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+
+#cart_nav ul li ul li  {
+  display: inline;
+}
+
+
