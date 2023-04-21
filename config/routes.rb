@@ -9,7 +9,10 @@ Rails.application.routes.draw do
   get '/products/sale', to: 'products#sale'
   get '/products/new', to: 'products#new'
 
-  resources :cart, only: %i[create destroy]
+  resources :cart, only: %i[create destroy ]
+
+
+
 
   get "home/index"
   root "home#index"
@@ -26,5 +29,12 @@ Rails.application.routes.draw do
     end
   end
   resources :categories
+
+   # /checkout/create something
+   scope '/checkout' do
+    post 'create', to: 'checkout#create', as: 'checkout_create'
+    get 'success', to: 'checkout#success', as: 'checkout_success'
+    get 'cancel', to: 'checkout#cancel', as: 'checkout_cancel'
+  end
 
 end

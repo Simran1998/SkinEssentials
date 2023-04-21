@@ -10,7 +10,7 @@
     <%= javascript_importmap_tags %>
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
 
-     <script src="https://js.stripe.com/v3"> </script>
+     <script src="https://js.stripe.com/v3"></script>
   </head>
 
   <body>
@@ -23,7 +23,7 @@
 <nav class="navbar-end" id="cart_nav">
 
         <ul>
-          Cart
+          <%= link_to "Cart", cart_index_path%>
           <sup><%= cart.size %></sup>
           <li>
             <% if cart.present? %>
@@ -32,6 +32,11 @@
               <ul>
                 <% cart.each do |p| %>
                   <li>
+
+  <%= hidden_field_tag :id, p.id %>
+  <%= number_field_tag :quantity, session[:shopping_cart][p.id], min: 1 %>
+  <%= submit_tag "Update Quantity" %>
+
                     <%= p.name %> <%= button_to '−', cart_path(p), method: :delete %>
                   </li>
                 <% end %>
