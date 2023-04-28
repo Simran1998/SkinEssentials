@@ -81,3 +81,6 @@ end
 gem 'google-cloud-storage'
 
 gem 'stripe'
+
+gem 'rubocop'
+gem 'rubocop-rails'
