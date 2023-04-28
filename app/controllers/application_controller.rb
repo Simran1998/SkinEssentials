@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   helper_method :cart
 
   def initialize_session
-    session[:shopping_cart] ||= [] #empty array representind product id's
+    session[:shopping_cart] ||= [] # empty array representind product id's
   end
 
   def cart
