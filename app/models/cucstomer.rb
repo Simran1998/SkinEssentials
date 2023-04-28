@@ -1,0 +1,2 @@
+class Cucstomer < ApplicationRecord
+end

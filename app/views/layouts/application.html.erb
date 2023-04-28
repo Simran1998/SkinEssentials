@@ -22,10 +22,10 @@
 
 <nav class="navbar-end" id="cart_nav">
 
-        <ul>
+
           <%= link_to "Cart", cart_index_path%>
           <sup><%= cart.size %></sup>
-          <li>
+
             <% if cart.present? %>
 
 
@@ -42,12 +42,10 @@
                 <% end %>
               </ul>
             <% end %>
-          </li>
-        </ul>
+
       </nav>
 
 
-<nav>
 
 
 

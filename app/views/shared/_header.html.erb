@@ -1,4 +1,5 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
+
   <div class="navbar-brand">
     <a class="navbar-item" href="#">
     <b>SKINESSENTIALS</b>
@@ -10,12 +11,12 @@
     <div class="navbar-start">
 
       <div class="navbar-item"><%= link_to 'Home', root_path %></div>
-  <div class="navbar-item">
+
 
  <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
+        <div class="navbar-link">
          <%= link_to 'Our Products', products_index_path %>
-        </a>
+        </div>
 
 
 
@@ -23,9 +24,9 @@
         <div class="navbar-dropdown">
          <% categories = Category.all %>
          <% categories.each do |c| %>
-            <a class="navbar-item p-2">
+            <div class="navbar-item p-2">
             <%= link_to c.name, c %>
-          </a>
+          </div>
 
         <%end%>
 
